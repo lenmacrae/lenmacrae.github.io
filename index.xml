@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Len&#39;s blog</title>
+    <link>https://lenmacrae.github.io/</link>
+    <description>Recent content on Len&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright 2017 Len MacRae</copyright>
+    <lastBuildDate>Sat, 29 Apr 2017 20:20:25 -0600</lastBuildDate>
+    
+	<atom:link href="https://lenmacrae.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>simon memory game</title>
+      <link>https://lenmacrae.github.io/post/simon-memory-game/</link>
+      <pubDate>Sat, 29 Apr 2017 20:20:25 -0600</pubDate>
+      
+      <guid>https://lenmacrae.github.io/post/simon-memory-game/</guid>
+      <description>While completing the projects for the Front End Development course at freeCodeCamp.com I created a simple clone of the Simon memory game. Play a round or two and see how well you can do!</description>
+    </item>
+    
+  </channel>
+</rss>
