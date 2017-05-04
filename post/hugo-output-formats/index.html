@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<title>Hugo Custom Output Formats &middot; Len&#39;s blog</title>
+		<link rel="canonical" href="https://lenmacrae.github.io/post/hugo-output-formats/">
+		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+		
+		
+	</head>
+	<body>
+		<a id="title" href="/" title="Len&#39;s blog">
+			
+			
+				<h1>Len&#39;s blog</h1>
+			
+		</a>
+		
+			<h4>Thoughts and Links</h4>
+		
+		<div id="social">
+			
+			
+			<a href="mailto:lenmacrae@gmail.com" title="Email">
+				<img alt="Email" height="64px" width="64px" src="/images/email.svg" />
+			</a>
+			
+			
+			<a href="https://github.com/lenmacrae" title="Github">
+				<img alt="GitHub" height="64px" width="64px" src="/images/github.svg" />
+			</a>
+			
+			
+			
+			<a href="https://twitter.com/lenmacrae" title="Twitter">
+				<img alt="Twitter" height="64px" width="64px" src="/images/twitter.svg" />
+			</a>
+			
+			
+		</div>
+		<div class="links">
+			<a href="/">Home</a>
+			
+				<a href="/post/">Archive</a>
+			
+			
+		</div>
+
+	<div class="postBody">
+		<div class="post">
+			<h1>Hugo Custom Output Formats</h1>
+			<span class="post-meta">Wed, May 3, 2017 - Read in 2 Min</span>
+			<div class="content">
+			<nav id="TableOfContents">
+<ul>
+<li><a href="#hugo-custom-output-formats">Hugo Custom Output Formats</a></li>
+</ul>
+</nav>
+			
+
+<h1 id="hugo-custom-output-formats">Hugo Custom Output Formats</h1>
+
+<p>Hugo v0.20 introduced a powerful new feature for your sites &ndash; <a href="http://gohugo.io/extras/output-formats/">Custom Output Formats</a>. As the release notes proudly proclaim:</p>
+
+<blockquote>
+<p>Hugo isn’t just that “static HTML with an added RSS feed” anymore. Say hello to calendars, e-book formats, Google AMP, and JSON search indexes, to name a few.</p>
+</blockquote>
+
+<p>Do you want to produce a page in multiple formats? Do you want to present content as CSV, AMP, or a calendar? Do you want to work with something more specialized? No problem! You can now do all this and more with Hugo&rsquo;s Custom Output Formats.</p>
+
+<p>There are two main components when producing a Custom Output Format, a media type and an output format. Hugo v0.20 now includes the following set of built-in media types: <code>javascript, json, rss, xml, calendar, css, csv, html, plaintext</code>. These can be output in one or more of these built-in formats: <code>AMP, CSS, CSV, Calendar, HTML, JSON, RSS</code>. Immediately you can see the new possibilities that this feature enables for your sites.</p>
+
+<p>But, these new built-ins are only the tip of the iceberg. The real excitement is in the fact that these are <em>Custom</em> Output Formats. You can easily create a new format or modify one of the existing defaults. The first step is to edit the site config so that there is a <code>mediaTypes</code> section. Each media type needs a type identifier and a file suffix. Once a media type is defined, you can proceed to define the <code>outputFormats</code>. Each media type can be output in multiple different formats, so long as each one has a unique file path. For example, you can output HTML as <code>/index.html</code> and AMP as <code>amp/index.html</code>.</p>
+
+<p>The final step is to make sure there is a proper template setup for each new output format that you are using. Take a look at the <a href="http://gohugo.io/extras/output-formats/">documentation</a> and get started making your Hugo sites even better than they are today!</p>
+
+			</div>
+		</div>
+	</div>
+		<div class="links">
+			<a href="/">Home</a>
+			
+				<a href="/post/">Archive</a>
+			
+			
+			<a href="#top">Top</a>
+		</div>
+		
+		
+		<p id="copyright">
+			© Copyright 2017 Len MacRae
+		</p>
+		
+	</body>
+</html>
+

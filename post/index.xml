@@ -7,10 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright 2017 Len MacRae</copyright>
-    <lastBuildDate>Sat, 29 Apr 2017 20:20:25 -0600</lastBuildDate>
+    <lastBuildDate>Wed, 03 May 2017 20:41:52 -0600</lastBuildDate>
     
 	<atom:link href="https://lenmacrae.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo Custom Output Formats</title>
+      <link>https://lenmacrae.github.io/post/hugo-output-formats/</link>
+      <pubDate>Wed, 03 May 2017 20:41:52 -0600</pubDate>
+      
+      <guid>https://lenmacrae.github.io/post/hugo-output-formats/</guid>
+      <description>Hugo Custom Output Formats Hugo v0.20 introduced a powerful new feature for your sites &amp;ndash; Custom Output Formats. As the release notes proudly proclaim:
+ Hugo isn’t just that “static HTML with an added RSS feed” anymore. Say hello to calendars, e-book formats, Google AMP, and JSON search indexes, to name a few.
+ Do you want to produce a page in multiple formats? Do you want to present content as CSV, AMP, or a calendar?</description>
+    </item>
+    
+    <item>
+      <title>Hugo v0.20 Content Organization Warning</title>
+      <link>https://lenmacrae.github.io/post/content-organization/</link>
+      <pubDate>Wed, 03 May 2017 20:40:26 -0600</pubDate>
+      
+      <guid>https://lenmacrae.github.io/post/content-organization/</guid>
+      <description>Content Organization in Hugo v0.20 Recently the Hugo team introduced version 0.20 which included brand new Custom Output Formats. However, before you dive in to play with these new tools, be aware that the release did cause problems for some users. In certain cases, some files ended up in unexpected locations when a site was published.
+These problems were related to Content Organization. The most common method for organizing files is to maintain separation between content files and static files.</description>
+    </item>
     
     <item>
       <title>simon memory game</title>
@@ -19,25 +40,6 @@
       
       <guid>https://lenmacrae.github.io/post/simon-memory-game/</guid>
       <description>While completing the projects for the Front End Development course at freeCodeCamp.com I created a simple clone of the Simon memory game. Play a round or two and see how well you can do!</description>
-    </item>
-    
-    <item>
-      <title>I can haz html?</title>
-      <link>https://lenmacrae.github.io/post/i-can-haz-html/</link>
-      <pubDate>Sat, 29 Apr 2017 22:45:20 +0000</pubDate>
-      
-      <guid>https://lenmacrae.github.io/post/i-can-haz-html/</guid>
-      <description>where is index.html?
-index.xml just isn&amp;rsquo;t working</description>
-    </item>
-    
-    <item>
-      <title>Forestry.io test post</title>
-      <link>https://lenmacrae.github.io/post/forestry-test-post/</link>
-      <pubDate>Sat, 29 Apr 2017 22:27:43 +0000</pubDate>
-      
-      <guid>https://lenmacrae.github.io/post/forestry-test-post/</guid>
-      <description>This is a new post created from Forestry.io</description>
     </item>
     
   </channel>

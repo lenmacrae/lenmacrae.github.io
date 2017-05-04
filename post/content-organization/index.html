@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<title>Hugo v0.20 Content Organization Warning &middot; Len&#39;s blog</title>
+		<link rel="canonical" href="https://lenmacrae.github.io/post/content-organization/">
+		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+		
+		
+	</head>
+	<body>
+		<a id="title" href="/" title="Len&#39;s blog">
+			
+			
+				<h1>Len&#39;s blog</h1>
+			
+		</a>
+		
+			<h4>Thoughts and Links</h4>
+		
+		<div id="social">
+			
+			
+			<a href="mailto:lenmacrae@gmail.com" title="Email">
+				<img alt="Email" height="64px" width="64px" src="/images/email.svg" />
+			</a>
+			
+			
+			<a href="https://github.com/lenmacrae" title="Github">
+				<img alt="GitHub" height="64px" width="64px" src="/images/github.svg" />
+			</a>
+			
+			
+			
+			<a href="https://twitter.com/lenmacrae" title="Twitter">
+				<img alt="Twitter" height="64px" width="64px" src="/images/twitter.svg" />
+			</a>
+			
+			
+		</div>
+		<div class="links">
+			<a href="/">Home</a>
+			
+				<a href="/post/">Archive</a>
+			
+			
+		</div>
+
+	<div class="postBody">
+		<div class="post">
+			<h1>Hugo v0.20 Content Organization Warning</h1>
+			<span class="post-meta">Wed, May 3, 2017 - Read in 2 Min</span>
+			<div class="content">
+			<nav id="TableOfContents">
+<ul>
+<li><a href="#content-organization-in-hugo-v0-20">Content Organization in Hugo v0.20</a></li>
+</ul>
+</nav>
+			
+
+<h1 id="content-organization-in-hugo-v0-20">Content Organization in Hugo v0.20</h1>
+
+<p>Recently the <a href="https://gohugo.io">Hugo</a> team introduced version 0.20 which included brand new <a href="http://gohugo.io/extras/output-formats/">Custom Output Formats</a>.
+However, before you dive in to play with these new tools, be aware that the release did cause problems for some users. In certain cases, some files ended up in unexpected locations when a site was published.</p>
+
+<p>These problems were related to <a href="http://gohugo.io/content/organization/">Content Organization</a>. The most common method for organizing files is to maintain separation between content files and static files. For example, a content file which is to be processed by Hugo might be stored as <code>content/blog/post1.md</code> and an associated image might be stored as <code>static/images/blog/image1.jpg</code>. Following this pattern continues to work with no unexpected issues.</p>
+
+<p>However, some users prefer an alternative method of content organization which groups all files relating to a single post together in one folder. In this case, we could expect to see a folder like <code>content/blog/post1/</code> and inside that folder would be both <code>index.md</code> and <code>image1.jpg</code>. It was cases such as this which ran into unexpected site changes with v0.20.</p>
+
+<p>When publishing a post, users would expect their new content to be found at <code>public/blog/post1/index.html</code>. Instead, the index.html page was bumped down another level, which resulted in <code>public/blog/post1/index/index.html</code>. To see the reason behind this, take a look at what Hugo calls <a href="https://gohugo.io/extras/urls/">&lsquo;pretty URLs&rsquo;</a>. Hugo considers something such as <code>public/blog/post1/index.html</code> to be a &lsquo;pretty URL&rsquo; because it is accessible in the browser as <code>https://example.com/blog/post1/</code>. Alternatively, <code>https://example.com/blog/post1.html</code> is considered an &lsquo;ugly URL&rsquo;.</p>
+
+<p>So, in an attempt to &lsquo;prettify&rsquo; URLs, Hugo v0.20 could result in paths such as <code>https://example.com/blog/post1/index/index.html</code>. Fortunately, there were a flurry of updates following v0.20 and a workaround for this particular issue was added in v0.20.6. Essentially, some file names are exempted from the pretty URL process, which will then produce the expected output. <code>index.md</code> is treated as an &lsquo;ugly URL&rsquo; and is output as <code>index.html</code> instead of <code>index/index.html</code>. Take a look at the <a href="https://github.com/spf13/hugo/pull/3401">pull request</a> for more details or to view the code changes.</p>
+
+<p>Finally, note that <a href="https://forestry.io">Forestry.io</a> currently uses v0.20.2 as the latest available version. If you wish to use this Hugo version, but believe that you may be affected by the issue noted above, there is a potential workaround to try. You are able to define the <a href="http://gohugo.io/content/organization/#slug">slug</a> in the Front Matter. By doing so, Hugo does not generate the destination using the filename, but rather the slug. In this case, try setting <code>slug = ‘/‘</code> to see if this resolves the issue described above while using v0.20.2.</p>
+
+			</div>
+		</div>
+	</div>
+		<div class="links">
+			<a href="/">Home</a>
+			
+				<a href="/post/">Archive</a>
+			
+			
+			<a href="#top">Top</a>
+		</div>
+		
+		
+		<p id="copyright">
+			© Copyright 2017 Len MacRae
+		</p>
+		
+	</body>
+</html>
+
