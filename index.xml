@@ -51,5 +51,16 @@ These problems were related to Content Organization. The most common method for 
       <description>While completing the projects for the Front End Development course at freeCodeCamp.com I created a simple clone of the Simon memory game. Play a round or two and see how well you can do!</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://lenmacrae.github.io/getaway/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lenmacrae.github.io/getaway/</guid>
+      <description>+ title: &amp;ldquo;Getaway&amp;rdquo; date: 2017-11-22T10:29:26-04:00 draft: true +
+Happy Birthday! The long awaited getaway is coming, and you only have to wait until the end of August!
+!(lodge.jpg)</description>
+    </item>
+    
   </channel>
 </rss>
